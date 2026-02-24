@@ -1,4 +1,5 @@
 using challengeApp.Data;
+using challengeApp.DataAccess;
 using challengeApp.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,8 @@ public static class ServiceExtensions
         {
             options.UseSqlServer(configuration.GetConnectionString(DefaultConnectionString));
         });
+
+        services.AddScoped<ICardHolderRepo, CardHolderRepo>();
         
         return services;
     }
