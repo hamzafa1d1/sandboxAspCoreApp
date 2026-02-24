@@ -3150,6 +3150,7 @@
       "Microsoft.EntityFrameworkCore >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Abstractions >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Analyzers >= 10.0.3",
+      "Microsoft.EntityFrameworkCore.Design >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Relational >= 10.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.3"
@@ -3211,6 +3212,12 @@
             "version": "[10.0.3, )"
           },
           "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[10.0.3, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.3, )"
           },

@@ -1,4 +1,4 @@
-using challengeApp.DbConnectionSetup;
+using challengeApp.Data;
 using challengeApp.Services;
 using Microsoft.EntityFrameworkCore;
 
